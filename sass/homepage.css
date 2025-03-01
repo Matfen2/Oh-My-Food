@@ -1,0 +1,68 @@
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  padding: 20px 0px 20px 0px;
+  gap: 10px;
+}
+nav i {
+  color: #000;
+  font-size: 1.3em;
+}
+nav p {
+  margin: 0;
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+}
+
+#choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+#choose h2 {
+  margin-top: -20px;
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Roboto";
+}
+#choose p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-family: "Roboto";
+}
+#choose button {
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: -30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+#choose button:hover {
+  opacity: 0.8;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("/assets/fonts/Shrikhand.ttf");
+}/*# sourceMappingURL=homepage.css.map */
