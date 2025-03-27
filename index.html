@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <h1 class="header_logo">ohmyfood</h1>
+        </nav>
+    </header>
+    <main>
+        <form method="get" class="location_research">
+            <label for="recherche"> <i class="fa-solid fa-location-dot"></i></label>
+            <input type="text" class="location_research_value" name="q" id="recherche" value="Paris, Belleville">
+        </form>
+        <section class="introduction">
+            <h1 class="introduction_title">Réservez le menu qui vous convient</h1>
+            <p class="introduction_subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+            <a href="#Restaurants" class="introduction_btn">
+                Explorer nos restaurants
+            </a>
+        </section>
+        <section class="Function">
+            <div class="Fonctionnement">
+                <h2 class="Function_title">Fonctionnement</h2>
+                <ol class="Function_steps">
+                    <li class="Function_step">
+                        <aside>
+                            <i class="Function_icon1et2 fa-solid fa-mobile-screen-button"></i>
+                            <span class="Function_text">Choisissez un restaurant</span>
+                        </aside>
+                    </li>
+                    <li class="Function_step">
+                        <aside>
+                            <i class="Function_icon1et2 fa-solid fa-list-ul"></i>
+                            <span class="Function_text">Composez votre menu</span>
+                        </aside>
+                    </li>
+                    <li class="Function_step">
+                        <aside>
+                            <i class="Function_icon3 fa-solid fa-store"></i>
+                            <span class="Function_text">Dégustez au restaurant </span>
+                        </aside>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="Restaurants" id="Restaurants">
+            <h2 class="Restaurants_title">Restaurants</h2>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <span class="footer_logo">ohmyfood</span>
+            <ul class="footer_list">
+                <li class="footer_items">
+                    <a class="footer_link" href="#"><i class="footer_icon fas fa-utensils"></i>Proposer un
+                        restaurant</a>
+                </li>
+                <li class="footer_items">
+                    <a class="footer_link" href="#"><i class="footer_icon fas fa-hands-helping"></i>Devenir
+                        partenaire</a>
+                </li>
+                <li class="footer_items">
+                    <a class="footer_link" href="#">Mentions légales</a>
+                </li>
+                <li class="footer_items">
+                    <a class="footer_link" href="mailto:contact@ohmyfood.com">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
