@@ -94,6 +94,11 @@
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
+  /*animation des cartes */
+  animation: itemApp 700ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  transform: scale(0);
 
   &_header {
     /* pour l'effet pointillé qu'on réduit la page*/
