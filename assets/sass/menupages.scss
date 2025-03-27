@@ -1,0 +1,148 @@
+@import "base";
+
+
+.header {
+  &-formenupages {
+    position: relative;
+  }
+
+  &_previous {
+    position: absolute;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: black;
+  }
+}
+
+.RestaurantImg {
+  max-width: 100%;
+  max-height: 18.5rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+
+  @media (min-width:64rem) {
+    margin-top: -2rem;
+    margin-left: 11*$appPadding;
+    margin-right: 11*$appPadding;
+    padding: 0 9*$appPadding;
+  }
+
+  &_header {
+    padding: $appPadding 2*$appPadding 0 $appPadding;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_title {
+    font-family: $logoAndRestoName-fontFamily;
+  }
+
+  &_btn {
+    position: static;
+    margin: 16px;
+  }
+
+}
+
+.RestoMenus {
+  display: grid;
+}
+
+.RestoMenu {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 $appPadding;
+
+  &_title {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: normal;
+
+    &::after {
+      content: "";
+      width: 3rem;
+      height: 0.25rem;
+      background-color: $color-tertiary;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.menuItem {
+  background-color: white;
+  padding: $appPadding;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: $appPadding 0;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+
+  &_header {
+    /* pour l'effet pointillé qu'on réduit la page*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  &_title {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 18px;
+  }
+
+  &_description {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 15px;
+  }
+
+  &_price {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 0.5rem;
+  }
+}
+
+
+@for $i from 0 to 9 {
+  .delay-#{$i} {
+    animation-delay: #{$i/9}s;
+  }
+}
+
+.wrapBtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 2*$appPadding 0 2.5rem 0;
+}
+
+.commandBtn {
+  @include button;
+  font-size: 16px;
+}

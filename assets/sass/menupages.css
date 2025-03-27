@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/*********général********/
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/********* variables ******/
+/********** Mixin ***********/
+/**** bouton violet**/
+/******* header ******/
+.header {
+  padding: 1rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.header_logo {
+  text-align: center;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: auto;
+}
+
+/******footer******/
+.footer {
+  background-color: #353535;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+@media (min-width: 64rem) {
+  .footer .container {
+    padding: 2rem;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "second first";
+  }
+}
+.footer_logo {
+  color: white;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.2rem;
+}
+@media (min-width: 64rem) {
+  .footer_logo {
+    grid-area: first;
+  }
+}
+.footer_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 64rem) {
+  .footer_list {
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+    justify-content: flex-end;
+  }
+}
+.footer_items {
+  margin: 0.5rem 0;
+}
+.footer_items:first-child {
+  margin-top: 0;
+}
+.footer_link {
+  color: white;
+  text-decoration: none;
+}
+.footer_link:hover {
+  text-decoration: underline;
+}
+.footer_icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.header-formenupages {
+  position: relative;
+}
+.header_previous {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: black;
+}
+
+.RestaurantImg {
+  max-width: 100%;
+  max-height: 18.5rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+}
+@media (min-width: 64rem) {
+  .menu {
+    margin-top: -2rem;
+    margin-left: 11rem;
+    margin-right: 11rem;
+    padding: 0 9rem;
+  }
+}
+.menu_header {
+  padding: 1rem 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_title {
+  font-family: "Shrikhand", sans-serif;
+}
+.menu_btn {
+  position: static;
+  margin: 16px;
+}
+
+.RestoMenus {
+  display: grid;
+}
+
+.RestoMenu {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+.RestoMenu_title {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+}
+.RestoMenu_title::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.menuItem {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+}
+.menuItem_header {
+  /* pour l'effet pointillé qu'on réduit la page*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+.menuItem_title {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 18px;
+}
+.menuItem_description {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 15px;
+}
+.menuItem_price {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.1111111111s;
+}
+
+.delay-2 {
+  animation-delay: 0.2222222222s;
+}
+
+.delay-3 {
+  animation-delay: 0.3333333333s;
+}
+
+.delay-4 {
+  animation-delay: 0.4444444444s;
+}
+
+.delay-5 {
+  animation-delay: 0.5555555556s;
+}
+
+.delay-6 {
+  animation-delay: 0.6666666667s;
+}
+
+.delay-7 {
+  animation-delay: 0.7777777778s;
+}
+
+.delay-8 {
+  animation-delay: 0.8888888889s;
+}
+
+.wrapBtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 2rem 0 2.5rem 0;
+}
+
+.commandBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  height: 50px;
+  width: 200px;
+  border-radius: 40px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  /* Par rapport à l'animation du bouton violet*/
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  font-size: 16px;
+}
+.commandBtn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  transform: scale(1.05);
+  opacity: 0.85;
+}/*# sourceMappingURL=menupages.css.map */

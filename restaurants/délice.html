@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant "Le délice des sens" - ohmyfood!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header>
+    <nav class="header header--formenupages">
+      <a href="../index.html">
+        <i class="fas fa-arrow-left header_previous"></i>
+      </a>
+      <h1 class="header_logo">ohmyfood</h1>
+    </nav>
+    <img src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="RestaurantImg"
+      alt="plat du menu du restaurant le délice des sens">
+  </header>
+  <main class="menu">
+    <!-- Le nom du restaurant -->
+    <header class="menu_header">
+      <h2 class="menu_title">Le délice des sens</h2>
+      <label class="card_btn menu_btn">
+        <input type="checkbox" name="restaurant-liked" value="x" id="restaurant1" />
+        <i class=" card_heart card_btn--Unliked fa-regular fa-heart"></i>
+        <i class=" card_heart card_btn--Liked fa-solid fa-heart"></i>
+      </label>
+    </header>
+    <!-- l'entrée du restaurants Le délice des sens -->
+    <div class="RestoMenus">
+      <section class="RestoMenu">
+        <h3 class="RestoMenu_title">Entrées</h3>
+        <section class="menuItem">
+          <header class="menuItem_header">
+            <h4 class="menuItem_title">Tartare de thon</h4>
+            <p class="menuItem_description">Assaisonné au yuzu</p>
+          </header>
+          <div class="menuItem_price">25€</div>
+        </section>
+        <section class="menuItem">
+          <header class="menuItem_header">
+            <h4 class="menuItem_title">Bouchée de homard croustillant </h4>
+            <p class="menuItem_description">Et sa farandole de petits légumes</p>
+          </header>
+          <div class="menuItem_price">35€</div>
+        </section>
+        <section class="menuItem">
+          <header class="menuItem_header">
+            <h4 class="menuItem_title">Poulet rôti aux herbes de Provence </h4>
+            <p class="menuItem_description">Et sa crème de truffe</p>
+          </header>
+          <div class="menuItem_price">40€</div>
+        </section>
+      </section>
+      <!-- Plats du restaurants Le délice des sens -->
+      <section class="RestoMenu">
+        <h3 class="RestoMenu_title">Plats</h3>
+        <section class="menuItem">
+          <header class="menuItem_header">
+            <h4 class="menuItem_title">Poulet rôti aux herbes de Provence </h4>
+            <p class="menuItem_description">Et sa crème de truffe</p>
+          </header>
+          <div class="menuItem_price">40€</div>
+        </section>
+        <section class="menuItem">
+          <header class="menuItem_header">
+            <h4 class="menuItem_title">Langouste rôtie </h4>
+            <p class="menuItem_description">Et ses légumes de saison</p>
+          </header>
+          <div class="menuItem_price">35€</div>
+        </section>
+        <section class="menuItem">
+          <header class="menuItem_header">
+            <h4 class="menuItem_title">Côte de bœuf Angus </h4>
+            <p class="menuItem_description">Et sa purée de panais</p>
+          </header>
+          <div class="menuItem_price">44€</div>
+        </section>
+      </section>
+      <!-- Dessert du restaurants Le délice des sens -->
+      <section class="RestoMenu">
+        <h3 class="RestoMenu_title">Desserts</h3>
+        <section class="menuItem">
+          <header class="menuItem_header">
+            <h4 class="menuItem_title">Farandole de desserts</h4>
+            <p class="menuItem_description">Du chef</p>
+          </header>
+          <div class="menuItem_price">18€</div>
+        </section>
+
+        <section class="menuItem">
+          <header class="menuItem_header">
+            <h4 class="menuItem_title">Crème brulée </h4>
+            <p class="menuItem_description">Revisitée</p>
+          </header>
+          <div class="menuItem_price">22€</div>
+        </section>
+
+        <section class="menuItem">
+          <header class="menuItem_header">
+            <h4 class="menuItem_title">Tiramisu </h4>
+            <p class="menuItem_description">À la noisette</p>
+          </header>
+          <div class="menuItem_price">23€</div>
+        </section>
+      </section>
+    </div>
+    <div class="wrapBtn">
+      <button class="commandBtn">Commander</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="footer_logo">ohmyfood</span>
+      <ul class="footer_list">
+        <li class="footer_items">
+          <a class="footer_link" href="#"><i class="footer_icon fas fa-utensils"></i>Proposer un restaurant</a>
+        </li>
+        <li class="footer_items">
+          <a class="footer_link" href="#"><i class="footer_icon fas fa-hands-helping"></i>Devenir partenaire</a>
+        </li>
+        <li class="footer_items">
+          <a class="footer_link" href="#">Mentions légales</a>
+        </li>
+        <li class="footer_items">
+          <a class="footer_link" href="mailto:contact@ohmyfood.com">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
