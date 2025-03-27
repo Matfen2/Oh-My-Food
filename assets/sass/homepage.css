@@ -83,6 +83,7 @@ body {
   margin-right: 0.5rem;
 }
 
+/******** loader********/
 .loader {
   position: fixed;
   height: 100%;

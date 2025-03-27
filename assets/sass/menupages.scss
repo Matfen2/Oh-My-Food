@@ -55,41 +55,80 @@
     margin: 16px;
 
     &--Liked, &--Unliked {
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: 1.5rem;
-        transition: opacity 300ms ease-in-out;
-      }
-      
-      &--Liked {
-        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        opacity: 0;
-      }
-      
-      input[type="checkbox"] {
-        position: absolute;
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        
-        &:checked ~ .card_btn--Liked,
-        &:focus ~ .card_btn--Liked {
-          opacity: 1;
-        }
-        &:checked ~ .card_btn--Unliked,
-        &:focus ~ .card_btn--Unliked {
-          opacity: 0;
-        }
-      }
-      
-      &:hover .card_btn--Unliked {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1.5rem;
+      transition: opacity 300ms ease-in-out;
+    }
+  
+    &--Liked {
+      background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: opacity 300ms ease-in-out;
+      opacity: 0;
+      font-size: 1.5rem;
+    }
+  
+    &--Unliked {
+      position: absolute;
+      font-size: 1.5rem;
+      color: inherit;
+      transition: opacity 300ms ease-in-out;
+    }
+  
+    // Gestion de la checkbox (cachée mais accessible)
+    & input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      margin: 0;
+    }
+  
+    // États interactifs
+    &:hover {
+      .card_btn--Unliked {
         opacity: 0.8;
       }
+    }
+  
+    // Quand la checkbox est cochée
+    & input[type="checkbox"]:checked {
+      ~ .card_btn--Liked {
+        opacity: 1;
+      }
+      ~ .card_btn--Unliked {
+        opacity: 0;
+      }
+    }
+  
+    // Quand le bouton a le focus (pour accessibilité)
+    &:focus-within {
+      .card_btn--Liked {
+        opacity: 1;
+      }
+      .card_btn--Unliked {
+        opacity: 0;
+      }
+    }
+  
+    // Réinitialisation quand on clique ailleurs
+    // Note: Cette partie nécessite que le body puisse recevoir le focus
+    body:not(:focus-within) & {
+      .card_btn--Liked {
+        opacity: 0;
+      }
+      .card_btn--Unliked {
+        opacity: 1;
+      }
+    }
+  }
+
+  &_heart {
+    font-size: 1.5rem;
   }
 }
 
@@ -168,7 +207,6 @@
     padding-left: 0.5rem;
   }
 
-  // Ajout de l'animation
   &_confirmation {
     background-color: $color-tertiary;
     margin: -1rem -5rem -1rem 1rem;
