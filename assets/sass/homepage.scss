@@ -1,5 +1,54 @@
 @import "base";
 
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.90);
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      
+  &_item {
+   height: 1rem;
+   width: 1rem;
+   border-radius: 1rem;
+   animation: jump 800ms;
+   animation-iteration-count: infinite;
+      
+        &Container {
+        display: flex;
+        width: 8rem;
+        justify-content: space-between;
+        }
+        
+        &--1 {
+        background-color: $color-tertiary;
+        }
+        
+        &--2 {
+        background-color: $color-secondary;
+        animation-delay: 0.1s;
+        }
+        
+        &--3 {
+        background-color: $color-primary ;
+        animation-delay: 0.2s;
+        }
+        
+        &--4 {
+        background-color: $color-secondary;
+        animation-delay: 0.3s;
+        }
+  }
+}
+
 /* champ de recherche */
 .location_research {
   display: flex;
